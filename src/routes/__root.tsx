@@ -7,7 +7,7 @@ export const Route = new RootRoute({
 
 function RootComponent() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
+    <div className="min-h-screen bg-slate-950 text-slate-50">
       <Outlet />
       <TanStackRouterDevtools />
     </div>
