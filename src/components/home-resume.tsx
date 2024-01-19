@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function HomeResume() {
   return (
     <div className="group relative h-full">

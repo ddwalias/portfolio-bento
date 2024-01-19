@@ -18,10 +18,10 @@ function Home() {
       <Link className="z-10 col-start-2 row-start-2 border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-blue-600">
         <HomeResume />
       </Link>
-      <Link className="col-start-3 row-span-2 row-start-1 border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-amber-600">
+      <Link to="/work" className="col-start-3 row-span-2 row-start-1 border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-amber-600">
         <HomeWorkAndEducation />
       </Link>
-      <Link className="col-start-1 row-start-3 border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-purple-600">
+      <Link to="/projects" className="col-start-1 row-start-3 border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-purple-600">
         <HomeProjects />
       </Link>
       <Link className="col-span-2 col-start-2 row-start-3 border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-lime-600">
