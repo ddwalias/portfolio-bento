@@ -3,9 +3,7 @@ export default function HomeMe() {
     <div className="group relative h-full">
       <div className="relative pl-6 pt-20">
         <p className="break-words text-lg">Hi, I'm</p>
-        <h1 className="break-words text-6xl font-bold">
-          Hoang Duy Dang.
-        </h1>
+        <h1 className="break-words text-6xl font-bold">Hoang Duy Dang.</h1>
         <div className="h-16"></div>
         <p className="w-[calc(50%-1.5rem)] break-words text-2xl">
           Software engineer

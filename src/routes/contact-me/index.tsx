@@ -1,4 +1,4 @@
-import { FileRoute, Link } from "@tanstack/react-router";
+import { FileRoute, Link, createFileRoute } from "@tanstack/react-router";
 import { Field, UpdaterFn, useForm } from "@tanstack/react-form";
 import {
   Button,
@@ -9,13 +9,13 @@ import {
   TextField,
 } from "react-aria-components";
 
-export const Route = new FileRoute('/contact-me/').createRoute({
+export const Route = createFileRoute("/contact-me/")({
   component: ContactMe,
 });
 
 interface ContactMeForm {
-  name: string,
-  email: string
+  name: string;
+  email: string;
 }
 
 export default function ContactMe() {
@@ -28,7 +28,12 @@ export default function ContactMe() {
 
   return (
     <>
-      <Link to="/">&lt; Go back</Link>
+      <Link
+        to="/"
+        className="fixed left-[10%] top-[10%] text-xl font-medium transition-transform hover:translate-x-2 hover:underline hover:underline-offset-2"
+      >
+        &lt; Go back
+      </Link>
       <div className="flex min-h-screen items-center justify-center gap-32">
         <div className="text-6xl font-bold underline underline-offset-8">
           Contact me
