@@ -12,35 +12,35 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   return (
-    <div className="grid min-h-screen w-full grid-cols-3 grid-rows-3">
+    <div className="grid min-h-screen w-full grid-cols-1 md:grid-cols-3 md:grid-rows-3">
       <Link
         to="/contact-me"
-        className="relative col-span-2 col-start-1 row-span-2 row-start-1 h-full border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 before:absolute before:bottom-1/2 before:right-0 before:h-0.5 before:w-[calc(50%+2px)] before:bg-slate-200/10 after:absolute after:bottom-0 after:right-1/2 after:h-1/2 after:w-0.5 after:bg-slate-200/10 hover:bg-rose-600"
+        className="relative h-full border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 before:absolute before:bottom-1/2 before:right-0 before:hidden before:h-0.5 before:w-[calc(50%+2px)] before:bg-slate-200/10 after:absolute after:bottom-0 after:right-1/2 after:hidden after:h-1/2 after:w-0.5 after:bg-slate-200/10 hover:bg-rose-600 md:col-span-2 md:col-start-1 md:row-span-2 md:row-start-1 md:before:block md:after:block"
       >
         <HomeMe />
       </Link>
       <a
         href={Resume}
         download
-        className="z-10 col-start-2 row-start-2 border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-blue-600"
+        className="border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-blue-600 md:z-10 md:col-start-2 md:row-start-2"
       >
         <HomeResume />
       </a>
       <Link
         to="/work"
-        className="col-start-3 row-span-2 row-start-1 border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-amber-600"
+        className="border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-amber-600 md:col-start-3 md:row-span-2 md:row-start-1"
       >
         <HomeWorkAndEducation />
       </Link>
       <Link
         to="/projects"
-        className="col-start-1 row-start-3 border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-purple-600"
+        className="border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-purple-600 md:col-start-1 md:row-start-3"
       >
         <HomeProjects />
       </Link>
       <Link
         to="/tech-stack"
-        className="col-span-2 col-start-2 row-start-3 border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-lime-600"
+        className="border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 hover:bg-lime-600 md:col-span-2 md:col-start-2 md:row-start-3"
       >
         <HomeTechstack />
       </Link>

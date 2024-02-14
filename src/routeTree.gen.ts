@@ -10,74 +10,74 @@
 
 // Import Routes
 
-import { Route as rootRoute } from './routes/__root'
-import { Route as LayoutImport } from './routes/_layout.tsx'
-import { Route as IndexImport } from './routes/index.tsx'
-import { Route as WorkIndexImport } from './routes/work/index.tsx'
-import { Route as TechStackIndexImport } from './routes/tech-stack/index.tsx'
-import { Route as ProjectsIndexImport } from './routes/projects/index.tsx'
-import { Route as ContactMeIndexImport } from './routes/contact-me/index.tsx'
+import { Route as rootRoute } from "./routes/__root";
+import { Route as LayoutImport } from "./routes/_layout.tsx";
+import { Route as IndexImport } from "./routes/index.tsx";
+import { Route as WorkIndexImport } from "./routes/work/index.tsx";
+import { Route as TechStackIndexImport } from "./routes/tech-stack/index.tsx";
+import { Route as ProjectsIndexImport } from "./routes/projects/index.tsx";
+import { Route as ContactMeIndexImport } from "./routes/contact-me/index.tsx";
 
 // Create/Update Routes
 
 const LayoutRoute = LayoutImport.update({
-  id: '/_layout',
+  id: "/_layout",
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 const IndexRoute = IndexImport.update({
-  path: '/',
+  path: "/",
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 const WorkIndexRoute = WorkIndexImport.update({
-  path: '/work/',
+  path: "/work/",
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 const TechStackIndexRoute = TechStackIndexImport.update({
-  path: '/tech-stack/',
+  path: "/tech-stack/",
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 const ProjectsIndexRoute = ProjectsIndexImport.update({
-  path: '/projects/',
+  path: "/projects/",
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 const ContactMeIndexRoute = ContactMeIndexImport.update({
-  path: '/contact-me/',
+  path: "/contact-me/",
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 // Populate the FileRoutesByPath interface
 
-declare module '@tanstack/react-router' {
+declare module "@tanstack/react-router" {
   interface FileRoutesByPath {
-    '/': {
-      preLoaderRoute: typeof IndexImport
-      parentRoute: typeof rootRoute
-    }
-    '/_layout': {
-      preLoaderRoute: typeof LayoutImport
-      parentRoute: typeof rootRoute
-    }
-    '/contact-me/': {
-      preLoaderRoute: typeof ContactMeIndexImport
-      parentRoute: typeof rootRoute
-    }
-    '/projects/': {
-      preLoaderRoute: typeof ProjectsIndexImport
-      parentRoute: typeof rootRoute
-    }
-    '/tech-stack/': {
-      preLoaderRoute: typeof TechStackIndexImport
-      parentRoute: typeof rootRoute
-    }
-    '/work/': {
-      preLoaderRoute: typeof WorkIndexImport
-      parentRoute: typeof rootRoute
-    }
+    "/": {
+      preLoaderRoute: typeof IndexImport;
+      parentRoute: typeof rootRoute;
+    };
+    "/_layout": {
+      preLoaderRoute: typeof LayoutImport;
+      parentRoute: typeof rootRoute;
+    };
+    "/contact-me/": {
+      preLoaderRoute: typeof ContactMeIndexImport;
+      parentRoute: typeof rootRoute;
+    };
+    "/projects/": {
+      preLoaderRoute: typeof ProjectsIndexImport;
+      parentRoute: typeof rootRoute;
+    };
+    "/tech-stack/": {
+      preLoaderRoute: typeof TechStackIndexImport;
+      parentRoute: typeof rootRoute;
+    };
+    "/work/": {
+      preLoaderRoute: typeof WorkIndexImport;
+      parentRoute: typeof rootRoute;
+    };
   }
 }
 
@@ -90,6 +90,6 @@ export const routeTree = rootRoute.addChildren([
   ProjectsIndexRoute,
   TechStackIndexRoute,
   WorkIndexRoute,
-])
+]);
 
 /* prettier-ignore-end */

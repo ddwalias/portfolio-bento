@@ -30,11 +30,11 @@ export default function ContactMe() {
     <>
       <Link
         to="/"
-        className="fixed left-[10%] top-[10%] text-xl font-medium transition-transform hover:translate-x-2 hover:underline hover:underline-offset-2"
+        className="fixed left-4 top-4 text-xl font-medium transition-transform hover:translate-x-2 hover:underline hover:underline-offset-2 md:left-16 md:top-16"
       >
         &lt; Go back
       </Link>
-      <div className="flex min-h-screen items-center justify-center gap-32">
+      <div className="flex min-h-screen flex-col items-center justify-center gap-32 px-8 md:flex-row md:gap-16">
         <div className="text-6xl font-bold underline underline-offset-8">
           Contact me
         </div>

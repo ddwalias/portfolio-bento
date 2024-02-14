@@ -1,7 +1,7 @@
 export default function HomeWorkAndEducation() {
   return (
     <div className="group relative h-full">
-      <h2 className="break-words pl-6 pt-6 text-6xl font-bold">
+      <h2 className="break-words py-20 pl-6 text-6xl font-bold md:pt-6">
         Work &<br />
         Education
       </h2>
