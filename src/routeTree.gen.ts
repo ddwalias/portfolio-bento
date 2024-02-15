@@ -11,12 +11,12 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as LayoutImport } from './routes/_layout.tsx'
-import { Route as IndexImport } from './routes/index.tsx'
-import { Route as WorkIndexImport } from './routes/work/index.tsx'
-import { Route as TechStackIndexImport } from './routes/tech-stack/index.tsx'
-import { Route as ProjectsIndexImport } from './routes/projects/index.tsx'
-import { Route as ContactMeIndexImport } from './routes/contact-me/index.tsx'
+import { Route as LayoutImport } from './routes/_layout'
+import { Route as IndexImport } from './routes/index'
+import { Route as WorkIndexImport } from './routes/work/index'
+import { Route as TechStackIndexImport } from './routes/tech-stack/index'
+import { Route as ProjectsIndexImport } from './routes/projects/index'
+import { Route as ContactMeIndexImport } from './routes/contact-me/index'
 
 // Create/Update Routes
 

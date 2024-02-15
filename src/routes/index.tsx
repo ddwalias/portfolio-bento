@@ -13,12 +13,12 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <div className="grid min-h-screen w-full grid-cols-1 md:grid-cols-3 md:grid-rows-3">
-      <Link
-        to="/contact-me"
+      <a
+        href="mailto:hddang219@gmail.com"
         className="relative h-full border-2 border-slate-200/10 bg-slate-950 transition-colors duration-300 before:absolute before:bottom-1/2 before:right-0 before:hidden before:h-0.5 before:w-[calc(50%+2px)] before:bg-slate-200/10 after:absolute after:bottom-0 after:right-1/2 after:hidden after:h-1/2 after:w-0.5 after:bg-slate-200/10 hover:bg-rose-600 md:col-span-2 md:col-start-1 md:row-span-2 md:row-start-1 md:before:block md:after:block"
       >
         <HomeMe />
-      </Link>
+      </a>
       <a
         href={Resume}
         download

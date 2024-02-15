@@ -12,7 +12,7 @@ export default function HomeMe() {
         </p>
       </div>
       <div className="absolute bottom-4 right-4 text-xl font-medium text-transparent transition-all group-hover:-translate-x-4 group-hover:text-slate-50 md:right-[calc(50%+1rem)]">
-        Contact me &gt;
+        Email me &gt;
       </div>
     </div>
   );
