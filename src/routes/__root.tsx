@@ -1,15 +1,20 @@
-import { Outlet, RootRoute } from "@tanstack/react-router";
+import { Outlet, createRootRoute } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
+import { Analytics } from "@vercel/analytics/react";
 
-export const Route = new RootRoute({
+
+export const Route = createRootRoute({
   component: RootComponent,
 });
 
 function RootComponent() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-50">
-      <Outlet />
-      <TanStackRouterDevtools />
-    </div>
+    <>
+      <div className="min-h-screen bg-slate-950 text-slate-50">
+        <Outlet />
+        <TanStackRouterDevtools />
+        <Analytics />
+      </div>
+    </>
   );
 }
