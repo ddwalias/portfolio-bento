@@ -1,3 +1,9 @@
 {
-  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }],
+  "rewrites": [
+    {
+      "source": "/0f61970d438640c49f51547d6da26fe1/:match*",
+      "destination": "https://www.hoangduydang.dev/_vercel/insights/:match*"
+    }
+  ]
 }

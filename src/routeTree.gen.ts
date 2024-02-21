@@ -11,7 +11,6 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as LayoutImport } from './routes/_layout'
 import { Route as IndexImport } from './routes/index'
 import { Route as WorkIndexImport } from './routes/work/index'
 import { Route as TechStackIndexImport } from './routes/tech-stack/index'
@@ -19,11 +18,6 @@ import { Route as ProjectsIndexImport } from './routes/projects/index'
 import { Route as ContactMeIndexImport } from './routes/contact-me/index'
 
 // Create/Update Routes
-
-const LayoutRoute = LayoutImport.update({
-  id: '/_layout',
-  getParentRoute: () => rootRoute,
-} as any)
 
 const IndexRoute = IndexImport.update({
   path: '/',
@@ -58,10 +52,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/_layout': {
-      preLoaderRoute: typeof LayoutImport
-      parentRoute: typeof rootRoute
-    }
     '/contact-me/': {
       preLoaderRoute: typeof ContactMeIndexImport
       parentRoute: typeof rootRoute
@@ -85,7 +75,6 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren([
   IndexRoute,
-  LayoutRoute,
   ContactMeIndexRoute,
   ProjectsIndexRoute,
   TechStackIndexRoute,
