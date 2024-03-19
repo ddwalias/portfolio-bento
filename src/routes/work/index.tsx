@@ -30,7 +30,7 @@ export default function Work() {
             <div className="h-4 w-4 rounded-full border-2 border-blue-500"></div>
             <div>
               <div className="text-xl font-bold">
-                Le Quy Don Technical University
+                Military Technical Academy
               </div>
               <div className="text-slate-400">2018 - 2023</div>
             </div>

@@ -49,7 +49,7 @@ export default function Projects() {
             </div>
             <p className="text-slate-500">Sitecore XP, ASP.NET</p>
           </a>
-          <a
+          {/* <a
             href="https://virparyas.hoangduydang.dev"
             target="_blank"
             className="w-[500px] rounded-lg  bg-slate-800 p-4 hover:bg-slate-900 "
@@ -61,7 +61,7 @@ export default function Projects() {
               </div>
             </div>
             <p className="text-slate-500">Next.js</p>
-          </a>
+          </a> */}
           <a
             href="https://github.com/Zyr0nX/discord"
             target="_blank"
