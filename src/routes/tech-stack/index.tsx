@@ -1,9 +1,9 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/tech-stack/")({
-  component: ContactMe,
+  component: TechStack,
 });
 
-export default function ContactMe() {
+export default function TechStack() {
   return (
     <>
       <Link
@@ -18,47 +18,74 @@ export default function ContactMe() {
         </div>
         <div className="flex flex-col gap-4 px-8">
           <div className="flex flex-col gap-2">
-            <h2 className="text-2xl font-semibold">Back-end development</h2>
+            <h2 className="text-2xl font-semibold">Programming Languages</h2>
             <div className="grid grid-cols-4 gap-4">
               <div className="h-fit  break-words rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
-                ASP.NET
+                C#
               </div>
               <div className="h-fit  break-words rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
-                Next.js
+                Typescript
               </div>
               <div className="h-fit  break-words rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
-                NodeJS
+                Javascript
+              </div>
+              <div className="h-fit  break-words rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
+                C++
+              </div>
+              <div className="h-fit  break-words rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
+                Python
               </div>
               <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
-                SQL
+                Rust
               </div>
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <h2 className="text-2xl font-semibold">Front-end development</h2>
+            <h2 className="text-2xl font-semibold">Web Development</h2>
             <div className="grid grid-cols-4 gap-4">
               <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
-                HTML
+                ASP.NET MVC
               </div>
               <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
-                CSS/Tailwind
+                .NET Core
               </div>
               <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
-                Typescript
+                Entity Framework Core
+              </div>
+              <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
+                Dapper
               </div>
               <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
                 React
               </div>
+              <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
+                jQuery
+              </div>
+              <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
+                HTML
+              </div>
+              <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
+                CSS
+              </div>
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <h2 className="text-2xl font-semibold">Devops</h2>
+            <h2 className="text-2xl font-semibold">Database</h2>
             <div className="grid grid-cols-4 gap-4">
               <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
-                Azure
+                SQL Server
               </div>
               <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
-                Vercel
+                PostgreSQL
+              </div>
+              <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
+                SQLite
+              </div>
+              <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
+                libSQL
+              </div>
+              <div className="h-fit break-words  rounded-lg bg-slate-800 p-4 text-center text-xl font-medium hover:bg-slate-900">
+                Redis
               </div>
             </div>
           </div>

@@ -19,6 +19,24 @@ export default function Projects() {
         </div>
         <div className="flex flex-col gap-4">
           <a
+            href="https://pivotal.eml.com.au"
+            target="_blank"
+            className="w-[500px] rounded-lg  bg-slate-800 p-4 hover:bg-slate-900 "
+          >
+            <div className="flex gap-4">
+              <div className="text-2xl font-bold">
+                EML Pivotal
+              </div>
+              <div className="flex w-fit items-center justify-center rounded-full border-2 bg-violet-700 px-2 text-xs">
+                Work
+              </div>
+            </div>
+
+            <p className="text-slate-500">
+              .NET Core, .NET Framework, jQuery, RabbitMQ
+            </p>
+          </a>
+          <a
             href="https://sg.osim.com"
             target="_blank"
             className="w-[500px] rounded-lg  bg-slate-800 p-4 hover:bg-slate-900 "
@@ -49,19 +67,6 @@ export default function Projects() {
             </div>
             <p className="text-slate-500">Sitecore XP, ASP.NET</p>
           </a>
-          {/* <a
-            href="https://virparyas.hoangduydang.dev"
-            target="_blank"
-            className="w-[500px] rounded-lg  bg-slate-800 p-4 hover:bg-slate-900 "
-          >
-            <div className="flex gap-4">
-              <div className="text-2xl font-bold">Virparyas Ordering App</div>
-              <div className="flex w-fit items-center justify-center rounded-full border-2 bg-yellow-700 px-2 text-xs">
-                Personal
-              </div>
-            </div>
-            <p className="text-slate-500">Next.js</p>
-          </a> */}
           <a
             href="https://github.com/Zyr0nX/discord"
             target="_blank"

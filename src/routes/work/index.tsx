@@ -21,8 +21,15 @@ export default function Work() {
           <div className="flex items-center gap-4">
             <div className="h-4 w-4 rounded-full border-2 border-blue-500"></div>
             <div>
+              <div className="text-xl font-bold">AS White Vietnam</div>
+              <div className="text-slate-400">August 2024 - present</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="h-4 w-4 rounded-full border-2 border-blue-500"></div>
+            <div>
               <div className="text-xl font-bold">SmartOSC</div>
-              <div className="text-slate-400">January 2021 - present</div>
+              <div className="text-slate-400">August 2022 - August 2024</div>
             </div>
           </div>
 
@@ -35,8 +42,6 @@ export default function Work() {
               <div className="text-slate-400">2018 - 2023</div>
             </div>
           </div>
-          <div></div>
-          <div></div>
         </div>
       </div>
     </>
