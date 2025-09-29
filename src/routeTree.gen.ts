@@ -13,7 +13,6 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorkIndexRouteImport } from './routes/work/index'
 import { Route as TechStackIndexRouteImport } from './routes/tech-stack/index'
 import { Route as ProjectsIndexRouteImport } from './routes/projects/index'
-import { Route as ContactMeIndexRouteImport } from './routes/contact-me/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -35,22 +34,15 @@ const ProjectsIndexRoute = ProjectsIndexRouteImport.update({
   path: '/projects/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ContactMeIndexRoute = ContactMeIndexRouteImport.update({
-  id: '/contact-me/',
-  path: '/contact-me/',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/contact-me': typeof ContactMeIndexRoute
   '/projects': typeof ProjectsIndexRoute
   '/tech-stack': typeof TechStackIndexRoute
   '/work': typeof WorkIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/contact-me': typeof ContactMeIndexRoute
   '/projects': typeof ProjectsIndexRoute
   '/tech-stack': typeof TechStackIndexRoute
   '/work': typeof WorkIndexRoute
@@ -58,28 +50,20 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/contact-me/': typeof ContactMeIndexRoute
   '/projects/': typeof ProjectsIndexRoute
   '/tech-stack/': typeof TechStackIndexRoute
   '/work/': typeof WorkIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact-me' | '/projects' | '/tech-stack' | '/work'
+  fullPaths: '/' | '/projects' | '/tech-stack' | '/work'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact-me' | '/projects' | '/tech-stack' | '/work'
-  id:
-    | '__root__'
-    | '/'
-    | '/contact-me/'
-    | '/projects/'
-    | '/tech-stack/'
-    | '/work/'
+  to: '/' | '/projects' | '/tech-stack' | '/work'
+  id: '__root__' | '/' | '/projects/' | '/tech-stack/' | '/work/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ContactMeIndexRoute: typeof ContactMeIndexRoute
   ProjectsIndexRoute: typeof ProjectsIndexRoute
   TechStackIndexRoute: typeof TechStackIndexRoute
   WorkIndexRoute: typeof WorkIndexRoute
@@ -115,19 +99,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/contact-me/': {
-      id: '/contact-me/'
-      path: '/contact-me'
-      fullPath: '/contact-me'
-      preLoaderRoute: typeof ContactMeIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ContactMeIndexRoute: ContactMeIndexRoute,
   ProjectsIndexRoute: ProjectsIndexRoute,
   TechStackIndexRoute: TechStackIndexRoute,
   WorkIndexRoute: WorkIndexRoute,

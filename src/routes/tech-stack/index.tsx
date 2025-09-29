@@ -13,7 +13,7 @@ export default function TechStack() {
         &lt; Go back
       </Link>
       <div className="flex min-h-screen flex-col items-center justify-center gap-32 px-8 md:flex-row md:gap-16">
-        <div className="text-6xl font-bold underline underline-offset-8">
+        <div className="text-6xl font-bold">
           Tech-stack
         </div>
         <div className="flex flex-col gap-4 px-8">

@@ -14,7 +14,7 @@ export default function Work() {
         &lt; Go back
       </Link>
       <div className="flex min-h-screen flex-col items-center justify-center gap-32 px-8 md:flex-row md:gap-16">
-        <div className="text-6xl font-bold underline underline-offset-8">
+        <div className="text-6xl font-bold">
           Work & Education
         </div>
         <div className="flex flex-col gap-4">

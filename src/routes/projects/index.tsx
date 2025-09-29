@@ -14,7 +14,7 @@ export default function Projects() {
         &lt; Go back
       </Link>
       <div className="flex min-h-screen flex-col items-center justify-center gap-32 px-8 md:flex-row md:gap-16">
-        <div className="text-6xl font-bold underline underline-offset-8">
+        <div className="text-6xl font-bold">
           Projects
         </div>
         <div className="flex flex-col gap-4">
@@ -73,15 +73,12 @@ export default function Projects() {
             className="w-[500px] rounded-lg  bg-slate-800 p-4 hover:bg-slate-900 "
           >
             <div className="flex gap-4">
-              <div className="text-2xl font-bold">Discord Clone Chat App</div>
+              <div className="text-2xl font-bold">Turso Database</div>
               <div className="flex w-fit items-center justify-center rounded-full border-2 bg-yellow-700 px-2 text-xs">
-                Personal
-              </div>
-              <div className="flex w-fit items-center justify-center rounded-full border-2 bg-slate-700 px-2 text-xs">
-                WIP
+                Open Source Contributor
               </div>
             </div>
-            <p className="text-slate-500">React, ASP.NET Core</p>
+            <p className="text-slate-500">Rust</p>
           </a>
         </div>
       </div>
