@@ -9,24 +9,20 @@ export default function Projects() {
     <>
       <Link
         to="/"
-        className="fixed left-4 top-4 text-xl font-medium transition-transform hover:translate-x-2 hover:underline hover:underline-offset-2 md:left-16 md:top-16"
+        className="fixed top-4 left-4 text-xl font-medium transition-transform hover:translate-x-2 hover:underline hover:underline-offset-2 md:top-16 md:left-16"
       >
         &lt; Go back
       </Link>
       <div className="flex min-h-screen flex-col items-center justify-center gap-32 px-8 md:flex-row md:gap-16">
-        <div className="text-6xl font-bold">
-          Projects
-        </div>
+        <div className="text-6xl font-bold">Projects</div>
         <div className="flex flex-col gap-4">
           <a
             href="https://pivotal.eml.com.au"
             target="_blank"
-            className="w-[500px] rounded-lg  bg-slate-800 p-4 hover:bg-slate-900 "
+            className="w-[500px] rounded-lg bg-slate-800 p-4 hover:bg-slate-900"
           >
             <div className="flex gap-4">
-              <div className="text-2xl font-bold">
-                EML Pivotal
-              </div>
+              <div className="text-2xl font-bold">EML Pivotal</div>
               <div className="flex w-fit items-center justify-center rounded-full border-2 bg-violet-700 px-2 text-xs">
                 Work
               </div>
@@ -39,7 +35,7 @@ export default function Projects() {
           <a
             href="https://sg.osim.com"
             target="_blank"
-            className="w-[500px] rounded-lg  bg-slate-800 p-4 hover:bg-slate-900 "
+            className="w-[500px] rounded-lg bg-slate-800 p-4 hover:bg-slate-900"
           >
             <div className="flex gap-4">
               <div className="text-2xl font-bold">
@@ -57,7 +53,7 @@ export default function Projects() {
           <a
             href="https://www.ricoh.com/"
             target="_blank"
-            className="w-[500px] rounded-lg  bg-slate-800 p-4 hover:bg-slate-900 "
+            className="w-[500px] rounded-lg bg-slate-800 p-4 hover:bg-slate-900"
           >
             <div className="flex gap-4">
               <div className="text-2xl font-bold">Ricoh Website</div>
@@ -68,9 +64,9 @@ export default function Projects() {
             <p className="text-slate-500">Sitecore XP, ASP.NET</p>
           </a>
           <a
-            href="https://github.com/Zyr0nX/discord"
+            href="https://github.com/tursodatabase/turso"
             target="_blank"
-            className="w-[500px] rounded-lg  bg-slate-800 p-4 hover:bg-slate-900 "
+            className="w-[500px] rounded-lg bg-slate-800 p-4 hover:bg-slate-900"
           >
             <div className="flex gap-4">
               <div className="text-2xl font-bold">Turso Database</div>
